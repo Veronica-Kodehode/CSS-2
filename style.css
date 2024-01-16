@@ -1,0 +1,142 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/images/Grass.avif);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#movearea {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  width: 90vw;
+  height: 90vh;
+  /* border: 2px solid red; */
+}
+
+.monster {
+  width: 30px;
+  height: 30px;
+  background-color: blueviolet;
+  border-radius: 35px;
+  position: relative;
+  animation-name: monstermove;
+  animation-duration: 30s;
+}
+
+#warning {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 50vh;
+  color: red;
+  -webkit-text-stroke: 1px black;
+  animation-name: warning;
+  animation-duration: 30s;
+  visibility: visible;
+}
+
+#warning::after {
+  visibility: hidden;
+}
+
+#warning2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 50vh;
+  color: red;
+  -webkit-text-stroke: 1px black;
+  visibility: hidden;
+}
+
+@keyframes monstermove {
+  0% {
+    left: -10%;
+    top: 0%;
+  }
+
+  12.5% {
+    left: 95%;
+    top: 0%;
+  }
+
+  25% {
+    left: 95%;
+    top: 25%;
+  }
+
+  37.5% {
+    left: 0%;
+    top: 25%;
+  }
+
+  50% {
+    left: 0%;
+    top: 50%;
+  }
+
+  62.5% {
+    left: 95%;
+    top: 50%;
+  }
+
+  75% {
+    left: 95%;
+    top: 75%;
+  }
+
+  87.5% {
+    left: 0%;
+    top: 75%;
+  }
+
+  100% {
+    left: 0%;
+    top: 105%;
+  }
+}
+
+@keyframes warning {
+  80% {
+    color: blue;
+  }
+  81% {
+    color: red;
+  }
+  82% {
+    color: blue;
+  }
+  83% {
+    color: red;
+  }
+  84% {
+    color: blue;
+  }
+  85% {
+    color: red;
+  }
+  86% {
+    color: blue;
+  }
+  87% {
+    color: red;
+  }
+}
+
+/* #warning2::after {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 50vh;
+  color: red;
+  -webkit-text-stroke: 1px black;
+  visibility: visible;
+} */
